@@ -3,6 +3,7 @@
 	<a href="/login">Log In</a>
 <% } else { %>
 	<h2>Hello, <%= user.displayName %>.</h2>
+	<h2>Groups: <%=user._json.groups %></h2>
 	<a href="/account">Account Info</a></br>
 	<a href="/logout">Log Out</a>
 <% } %>
